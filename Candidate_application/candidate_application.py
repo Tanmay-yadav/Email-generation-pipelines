@@ -15,7 +15,7 @@ OLLAMA_URL = "http://localhost:11434/api/generate"
 OUTPUT_CSV = "E:\\Synthetic-Email-Generation-tool-main\\Candidate_application\\candidate_application1.csv"
 DEBUG_DIR = "E:\\Synthetic-Email-Generation-tool-main\\Candidate_application\\debug"
 LOG_FILE = "E:\\Synthetic-Email-Generation-tool-main\\Candidate_application\\candidate_application_history1.log"  # <--- NEW LOG FILE
-NUM_EMAILS = 500       
+NUM_EMAILS = 600       
 DELAY_SECONDS = 0.1      
 MAX_RETRIES = 3          
 
