@@ -1,7 +1,7 @@
 import csv
 
 # ===== CONFIG =====
-INPUT_CSV = "E:\\Synthetic-Email-Generation-tool-main\\Candidate_application\\candidate_application.csv"   # your generated file
+INPUT_CSV = "E:\\Synthetic-Email-Generation-tool-main\\Candidate_application\\candidate_application1.csv"   # your generated file
 OUTPUT_CSV = "E:\\Synthetic-Email-Generation-tool-main\\Candidate_application\\candidate_application_labeled.csv"
 LABEL_NAME = "candidate_application"
 
@@ -22,6 +22,6 @@ with open(INPUT_CSV, "r", encoding="utf-8") as infile, \
         # Combine subject + body (ATS-style)
         combined_text = f"Subject: {subject}\n\n{body}"
 
-        writer.writerow([LABEL_NAME, combined_text])
+        writer.writerow([LABEL_NAME, body])
 
 print("✅ Dataset successfully labeled and saved:", OUTPUT_CSV)
